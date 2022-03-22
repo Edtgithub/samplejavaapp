@@ -10,7 +10,7 @@
             kubectl create deployment sampleapp --image=tcn4docker/myproj:{{ build }}
          else 
             echo "Deploying Sampleapp Application"
-            kubectl create deployment sampleapp --image=ltcn4docker/myproj:{{ build }}
+            kubectl create deployment sampleapp --image=tcn4docker/myproj:{{ build }}
          fi
     - name: deploying service
       shell: |
